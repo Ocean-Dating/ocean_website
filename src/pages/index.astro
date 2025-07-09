@@ -29,47 +29,65 @@ import '../styles/global.css'
     <main>
       <section class="hero">
         <div class="container">
-          <img src="/ocean_logo_vector.png" alt="Ocean Logo" style="height: 120px; margin-bottom: 2rem;" />
-          <h1>Ocean</h1>
-          <p>The AI-powered dating app</p>
-          <p style="font-size: 1.1rem; margin-bottom: 3rem; opacity: 0.8;">
-            Dive into meaningful connections with the power of AI. Ocean helps you find your perfect match through intelligent compatibility matching.
-          </p>
-          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="#" class="btn">Download for iOS</a>
-            <a href="#" class="btn">Download for Android</a>
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="hero-branding">
+                <img src="/ocean_logo_vector.png" alt="Ocean Logo" class="hero-logo" />
+                <h1>Ocean</h1>
+                <p class="hero-tagline">The AI-powered dating app</p>
+              </div>
+              <p class="hero-description">
+                Dive into meaningful connections with the power of AI. Ocean helps you find your perfect match through intelligent compatibility matching.
+              </p>
+              <div class="hero-cta">
+                <a href="#" class="btn btn-primary">Download for iOS</a>
+                <a href="#" class="btn btn-secondary">Download for Android</a>
+              </div>
+            </div>
+            <div class="hero-phone">
+              <div class="phone-mockup">
+                <img src="/app-screenshot-placeholder.svg" alt="Ocean App Screenshot" class="phone-screen" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section style="padding: 4rem 0;">
+      <section class="features">
         <div class="container">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; text-align: center;">
-            <div>
-              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">AI-Powered Matching</h3>
-              <p style="opacity: 0.9;">Our advanced AI learns your preferences and finds compatible matches based on deeper connections.</p>
+          <div class="features-header">
+            <h2>Why Choose Ocean?</h2>
+            <p>Discover what makes Ocean the perfect dating app for meaningful connections</p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🧠</div>
+              <h3>AI-Powered Matching</h3>
+              <p>Our advanced AI learns your preferences and finds compatible matches based on deeper connections.</p>
             </div>
-            <div>
-              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Meaningful Conversations</h3>
-              <p style="opacity: 0.9;">Smart conversation starters help you break the ice and build genuine connections.</p>
+            <div class="feature-card">
+              <div class="feature-icon">💬</div>
+              <h3>Meaningful Conversations</h3>
+              <p>Smart conversation starters help you break the ice and build genuine connections.</p>
             </div>
-            <div>
-              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Safe & Secure</h3>
-              <p style="opacity: 0.9;">Your privacy and safety are our top priorities with advanced verification and security features.</p>
+            <div class="feature-card">
+              <div class="feature-icon">🔒</div>
+              <h3>Safe & Secure</h3>
+              <p>Your privacy and safety are our top priorities with advanced verification and security features.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section style="padding: 4rem 0; background-color: rgba(42, 146, 144, 0.5);">
-        <div class="container" style="text-align: center;">
-          <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Coming Soon</h2>
-          <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
-            Ocean will be available for iOS and Android devices. Stay tuned for updates!
-          </p>
-          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="#" class="btn">Notify Me - iOS</a>
-            <a href="#" class="btn">Notify Me - Android</a>
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Coming Soon</h2>
+            <p>Ocean will be available for iOS and Android devices. Stay tuned for updates!</p>
+            <div class="cta-buttons">
+              <a href="#" class="btn btn-outline">Notify Me - iOS</a>
+              <a href="#" class="btn btn-outline">Notify Me - Android</a>
+            </div>
           </div>
         </div>
       </section>
