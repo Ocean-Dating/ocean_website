@@ -1,108 +1,81 @@
 ---
-import '../styles/global.css'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ocean - The AI-powered dating app</title>
-    <meta name="description" content="Ocean is the AI-powered dating app that helps you find meaningful connections. Available for iOS and Android." />
-  </head>
-  <body>
-    <header class="header">
+<BaseLayout
+  title="Ocean - The AI-powered dating app"
+  description="Ocean is the AI-powered dating app that helps you find meaningful connections. Available for iOS and Android."
+>
+  <Header />
+  
+  <main>
+    <section class="hero">
       <div class="container">
-        <nav class="nav">
-          <img src="/ocean_wordmark_vector.png" alt="Ocean" class="logo" />
-          <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/privacy">Privacy</a></li>
-            <li><a href="/terms">Terms</a></li>
-          </ul>
-        </nav>
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-branding">
+              <img src="/ocean_logo_vector.png" alt="Ocean Logo" class="hero-logo" />
+              <h1>Ocean</h1>
+              <p class="hero-tagline">The AI-powered dating app</p>
+            </div>
+            <p class="hero-description">
+              Dive into meaningful connections with the power of AI. Ocean helps you find your perfect match through intelligent compatibility matching.
+            </p>
+            <div class="hero-cta">
+              <a href="#" class="btn btn-primary">Download for iOS</a>
+              <a href="#" class="btn btn-secondary">Download for Android</a>
+            </div>
+          </div>
+          <div class="hero-phone">
+            <div class="phone-mockup">
+              <img src="/app-screenshot-placeholder.svg" alt="Ocean App Screenshot" class="phone-screen" />
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <div class="hero-branding">
-                <img src="/ocean_logo_vector.png" alt="Ocean Logo" class="hero-logo" />
-                <h1>Ocean</h1>
-                <p class="hero-tagline">The AI-powered dating app</p>
-              </div>
-              <p class="hero-description">
-                Dive into meaningful connections with the power of AI. Ocean helps you find your perfect match through intelligent compatibility matching.
-              </p>
-              <div class="hero-cta">
-                <a href="#" class="btn btn-primary">Download for iOS</a>
-                <a href="#" class="btn btn-secondary">Download for Android</a>
-              </div>
-            </div>
-            <div class="hero-phone">
-              <div class="phone-mockup">
-                <img src="/app-screenshot-placeholder.svg" alt="Ocean App Screenshot" class="phone-screen" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="features">
-        <div class="container">
-          <div class="features-header">
-            <h2>Why Choose Ocean?</h2>
-            <p>Discover what makes Ocean the perfect dating app for meaningful connections</p>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">🧠</div>
-              <h3>AI-Powered Matching</h3>
-              <p>Our advanced AI learns your preferences and finds compatible matches based on deeper connections.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">💬</div>
-              <h3>Meaningful Conversations</h3>
-              <p>Smart conversation starters help you break the ice and build genuine connections.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">🔒</div>
-              <h3>Safe & Secure</h3>
-              <p>Your privacy and safety are our top priorities with advanced verification and security features.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta-section">
-        <div class="container">
-          <div class="cta-content">
-            <h2>Coming Soon</h2>
-            <p>Ocean will be available for iOS and Android devices. Stay tuned for updates!</p>
-            <div class="cta-buttons">
-              <a href="#" class="btn btn-outline">Notify Me - iOS</a>
-              <a href="#" class="btn btn-outline">Notify Me - Android</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <section class="features">
       <div class="container">
-        <div class="footer-links">
-          <a href="/about">About</a>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
-          <a href="/blog">Blog</a>
+        <div class="features-header">
+          <h2>Why Choose Ocean?</h2>
+          <p>Discover what makes Ocean the perfect dating app for meaningful connections</p>
         </div>
-        <p>&copy; 2025 Ocean. All rights reserved.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>AI-Powered Matching</h3>
+            <p>Our advanced AI learns your preferences and finds compatible matches based on deeper connections.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Meaningful Conversations</h3>
+            <p>Smart conversation starters help you break the ice and build genuine connections.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Safe & Secure</h3>
+            <p>Your privacy and safety are our top priorities with advanced verification and security features.</p>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
-</html>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Coming Soon</h2>
+          <p>Ocean will be available for iOS and Android devices. Stay tuned for updates!</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-outline">Notify Me - iOS</a>
+            <a href="#" class="btn btn-outline">Notify Me - Android</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

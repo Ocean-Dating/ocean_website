@@ -1,32 +1,12 @@
 ---
-import '../styles/global.css'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms of Service - Ocean Dating App</title>
-    <meta name="description" content="Read Ocean's terms of service to understand the rules and guidelines for using our AI-powered dating app." />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <img src="/ocean_wordmark_vector.png" alt="Ocean" class="logo" />
-          <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/privacy">Privacy</a></li>
-            <li><a href="/terms">Terms</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
+<BaseLayout title="Terms of Service - Ocean Dating App" description="Read Ocean's terms of service to understand the rules and guidelines for using our AI-powered dating app.">
+  <Header />
+  <main>
       <section class="hero">
         <div class="container">
           <h1>Terms of Service</h1>
@@ -134,17 +114,5 @@ import '../styles/global.css'
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-links">
-          <a href="/about">About</a>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
-          <a href="/blog">Blog</a>
-        </div>
-        <p>&copy; 2025 Ocean. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+  <Footer />
+</BaseLayout>
