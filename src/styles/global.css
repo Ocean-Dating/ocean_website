@@ -83,8 +83,8 @@ a:hover {
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 6rem;
+  justify-content: center;
+  gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 80vh;
@@ -92,7 +92,7 @@ a:hover {
 
 .hero-text {
   flex: 1;
-  text-align: left;
+  text-align: center;
   max-width: 500px;
 }
 
@@ -139,12 +139,6 @@ a:hover {
   border-radius: 35px;
   padding: 25px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
 }
 
 .phone-mockup::before {
