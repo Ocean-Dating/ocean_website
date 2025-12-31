@@ -4,94 +4,223 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 ---
 
-<BaseLayout title="Privacy Policy - Ocean Dating App" description="Read Ocean's privacy policy to understand how we protect your data and respect your privacy.">
+<BaseLayout
+  title="Privacy Policy - Ocean Dating App"
+  description="Read Ocean’s privacy policy to understand how we collect, use, and protect your information."
+>
   <Header />
   <main>
-      <section class="hero">
-        <div class="container">
-          <h1>Privacy Policy</h1>
-          <p>Your privacy is our top priority</p>
-        </div>
-      </section>
+    <section class="hero">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>How Ocean collects, uses, and protects your information</p>
+      </div>
+    </section>
 
-      <section style="padding: 4rem 0;">
-        <div class="container">
-          <div style="max-width: 800px; margin: 0 auto;">
-            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.8;">
-              Last updated: July 2025
+    <section>
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+          <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.8;">
+            Last updated: December 2025
+          </p>
+
+          <div style="margin-bottom: 3rem;">
+            <p style="line-height: 1.8; opacity: 0.9;">
+              Crystal Dating, Inc. (“Crystal Dating,” “Ocean,” “we,” “us,” or “our”) operates
+              the Ocean mobile application (the “App”). This Privacy Policy explains how we
+              collect, use, disclose, and protect information about you when you use the App.
             </p>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              By using the App, you agree to the collection and use of information as described
+              in this Privacy Policy.
+            </p>
+          </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Overview</h2>
-              <p style="line-height: 1.8; opacity: 0.9; margin-bottom: 1.5rem;">
-                At Ocean, we are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our AI-powered dating app.
-              </p>
-              <p style="line-height: 1.8; opacity: 0.9;">
-                We believe in transparency and want you to understand exactly how your information is handled. This policy applies to all users of the Ocean mobile application and website.
-              </p>
-            </div>
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">1. Information We Collect</h2>
 
-            <div style="margin-bottom: 3rem;">
-              <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Information We Collect</h2>
-              <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Profile Information</h3>
-              <p style="line-height: 1.8; opacity: 0.9; margin-bottom: 1.5rem;">
-                We collect information you provide when creating your profile, including photos, preferences, and basic demographic information necessary for matching.
-              </p>
-              
-              <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Usage Data</h3>
-              <p style="line-height: 1.8; opacity: 0.9; margin-bottom: 1.5rem;">
-                We collect information about how you use the app, including interactions with other users, feature usage, and app performance data to improve our AI matching algorithms.
-              </p>
-              
-              <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Device Information</h3>
-              <p style="line-height: 1.8; opacity: 0.9;">
-                We collect basic device information such as device type, operating system, and app version to ensure compatibility and security.
-              </p>
-            </div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Information You Provide</h3>
+            <ul style="line-height: 1.8; opacity: 0.9;">
+              <li>Phone number (required)</li>
+              <li>Email address (optional)</li>
+              <li>Name (not required to be your legal name)</li>
+              <li>Date of birth (used for age verification only)</li>
+              <li>Gender</li>
+              <li>Dating preferences (such as preferred gender)</li>
+              <li>Photos</li>
+              <li>Optional profile information such as job, education, height, additional photos, and written responses</li>
+            </ul>
 
-            <div style="margin-bottom: 3rem;">
-              <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">How We Use Your Information</h2>
-              <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 1rem; opacity: 0.9;">• <strong>AI Matching:</strong> Our algorithms analyze your preferences and behavior to suggest compatible matches</li>
-                <li style="margin-bottom: 1rem; opacity: 0.9;">• <strong>Service Improvement:</strong> We use aggregated data to enhance our features and user experience</li>
-                <li style="margin-bottom: 1rem; opacity: 0.9;">• <strong>Safety & Security:</strong> We monitor for suspicious activity and ensure platform safety</li>
-                <li style="margin-bottom: 1rem; opacity: 0.9;">• <strong>Communication:</strong> We send you important updates and notifications about your matches</li>
-              </ul>
-            </div>
+            <h3 style="font-size: 1.4rem; margin: 1.5rem 0 1rem;">Automatically Collected Information</h3>
+            <ul style="line-height: 1.8; opacity: 0.9;">
+              <li>Approximate location (city/state and distance rounded to the nearest mile)</li>
+              <li>Device and usage information (device type, operating system, app interactions)</li>
+              <li>A unique internal user identifier</li>
+              <li>Log and diagnostic information for reliability and security</li>
+            </ul>
 
-            <div style="margin-bottom: 3rem;">
-              <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Data Protection</h2>
-              <p style="line-height: 1.8; opacity: 0.9; margin-bottom: 1.5rem;">
-                We implement industry-standard security measures to protect your personal information, including encryption, secure data storage, and regular security audits.
-              </p>
-              <p style="line-height: 1.8; opacity: 0.9;">
-                Your data is stored securely and is never shared with third parties without your explicit consent, except as required by law.
-              </p>
-            </div>
+            <p style="line-height: 1.8; opacity: 0.9; margin-top: 1rem;">
+              We do not collect continuous location data. Location is checked when you sign up
+              and when you manually update your location in the App.
+            </p>
+          </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Your Rights</h2>
-              <p style="line-height: 1.8; opacity: 0.9; margin-bottom: 1.5rem;">
-                You have the right to access, update, or delete your personal information at any time. You can also opt out of certain data processing activities through your account settings.
-              </p>
-              <p style="line-height: 1.8; opacity: 0.9;">
-                If you have any questions about your privacy or want to exercise your rights, please contact us at privacy@ocean-app.com.
-              </p>
-            </div>
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">2. Public Profile Information</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              The following information may be visible to other users on your profile:
+            </p>
+            <ul style="line-height: 1.8; opacity: 0.9;">
+              <li>Name</li>
+              <li>Age (derived from date of birth; your date of birth is not shown)</li>
+              <li>Gender (as configured by you)</li>
+              <li>Photos</li>
+              <li>Job (if provided)</li>
+              <li>Education (if provided)</li>
+              <li>Height (if provided)</li>
+              <li>City and state</li>
+              <li>Distance (rounded to the nearest mile)</li>
+              <li>AI-generated compatibility score and compatibility explanation</li>
+            </ul>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              All other information is kept private and is not displayed to other users.
+            </p>
+          </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Contact Us</h2>
-              <p style="line-height: 1.8; opacity: 0.9;">
-                If you have any questions about this Privacy Policy, please contact us at:
-              </p>
-              <p style="line-height: 1.8; opacity: 0.9; margin-top: 1rem;">
-                Email: privacy@ocean-app.com<br>
-                Subject: Privacy Policy Inquiry
-              </p>
-            </div>
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">3. How We Use Your Information</h2>
+            <ul style="line-height: 1.8; opacity: 0.9;">
+              <li>Provide and operate the App</li>
+              <li>Create and display user profiles</li>
+              <li>Enable messaging between users</li>
+              <li>Match users and generate compatibility scores and explanations</li>
+              <li>Detect, prevent, and address harmful or prohibited behavior</li>
+              <li>Review reports and enforce our community rules</li>
+              <li>Improve the App’s functionality, safety, and reliability</li>
+              <li>Communicate with you about the App</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">4. AI-Based Matching</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We use artificial intelligence to analyze profile information, photos, and written
+              responses to generate compatibility scores, compatibility explanations, and to
+              filter which profiles are shown to users.
+            </p>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              These systems are not used for advertising or identity verification, and user data
+              processed for matching is not used to train third-party AI models.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">5. Messaging</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              Users may send private messages to matched users. Messages are private by default
+              and are not proactively monitored. Messages may be reviewed by our support team
+              only if reported by a user.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">6. Safety, Reports, and Moderation</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              Users may report other users through the App. We store report information and
+              review reports to take appropriate action, including warnings or bans.
+            </p>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We may retain limited information related to reports, moderation actions, and
+              safety investigations even after an account is deleted where necessary to enforce
+              our rules or comply with legal obligations.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">7. Analytics and Error Reporting</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We use analytics and error-reporting services to understand how the App is used
+              and to improve reliability and performance. These services may collect device
+              information, usage data, and internal identifiers.
+            </p>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We do not sell personal information or use analytics for advertising. The App
+              respects Apple’s App Tracking Transparency framework and does not track users
+              across other companies’ apps or websites.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">8. Data Storage and Security</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We use industry-standard security measures to protect user data, including
+              encryption at rest and restricted access to authorized personnel.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">9. Account Deletion</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              You may delete your account at any time through the App or by contacting us.
+            </p>
+            <ul style="line-height: 1.8; opacity: 0.9;">
+              <li>Profile and account data are deleted immediately</li>
+              <li>Photos are deleted</li>
+              <li>Authentication data is deleted</li>
+              <li>Backup copies may be retained for up to 7 days</li>
+            </ul>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              Some information related to reports, analytics, or logs may persist for a limited
+              period as described in this policy.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">10. Age Requirement</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              Ocean is intended only for users 18 years of age or older. Accounts found to
+              belong to users under 18 will be terminated and deleted.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">11. Sharing of Information</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We do not sell personal information. We may share information with service
+              providers, to comply with legal obligations, or to protect user safety and the
+              integrity of the App.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">12. Your Rights</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              You may access, update, or delete your information through the App or by
+              contacting us.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">13. Changes to This Policy</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We may update this Privacy Policy from time to time. The effective date will be
+              updated when changes are made.
+            </p>
+          </div>
+
+          <div>
+            <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">14. Contact Us</h2>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              <strong>Crystal Dating, Inc.</strong><br />
+              3229 Greenpoint Ave PMB 107<br />
+              Long Island City, NY 11101<br />
+              United States<br />
+              Email: <a href="mailto:support@oceandating.app">support@oceandating.app</a>
+            </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
   <Footer />
 </BaseLayout>
