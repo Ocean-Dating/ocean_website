@@ -53,16 +53,23 @@ import Footer from '../components/Footer.astro'
 
             <h3 style="font-size: 1.4rem; margin: 1.5rem 0 1rem;">Automatically Collected Information</h3>
             <ul style="line-height: 1.8; opacity: 0.9;">
-              <li>Approximate location (city/state and distance rounded to the nearest mile)</li>
-              <li>Device and usage information (device type, operating system, app interactions)</li>
+              <li>Device and usage information (such as device type, operating system, app interactions)</li>
               <li>A unique internal user identifier</li>
-              <li>Log and diagnostic information for reliability and security</li>
+              <li>Log and diagnostic information used for reliability and security</li>
+              <li>Approximate location inferred from IP address by analytics and error-reporting tools</li>
             </ul>
 
-            <p style="line-height: 1.8; opacity: 0.9; margin-top: 1rem;">
-              We do not collect continuous location data. Location is checked when you sign up
-              and when you manually update your location in the App.
+            <h3 style="font-size: 1.4rem; margin: 1.5rem 0 1rem;">Location Information</h3>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              The App requests access to your device location to support matching and display
+              approximate distance and location information to other users. Depending on your
+              device settings, you may choose to share either precise or approximate location.
             </p>
+            <p style="line-height: 1.8; opacity: 0.9;">
+              We do not collect location data continuously. Your location is checked when you sign
+              up and when you manually update your location in the App.
+            </p>
+
           </div>
 
           <div style="margin-bottom: 3rem;">
@@ -128,8 +135,6 @@ import Footer from '../components/Footer.astro'
             <p style="line-height: 1.8; opacity: 0.9;">
               Users may report other users through the App. We store report information and
               review reports to take appropriate action, including warnings or bans.
-            </p>
-            <p style="line-height: 1.8; opacity: 0.9;">
               We may retain limited information related to reports, moderation actions, and
               safety investigations even after an account is deleted where necessary to enforce
               our rules or comply with legal obligations.
