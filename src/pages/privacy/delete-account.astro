@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<BaseLayout
+  title="Delete Your Account - Ocean Dating App"
+  description="Instructions on how you can delete your account."
+>
+  <Header />
+  <main style="max-width: 700px; margin: 0 auto; padding: 3rem 1.5rem;">
+    <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">Steps to delete your account</h1>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">If you have the app downloaded:</h2>
+    <ol style="list-style: decimal; padding-left: 1.5rem; margin-bottom: 2rem; line-height: 1.8;">
+      <li>Sign into your account.</li>
+      <li>Go to Settings.</li>
+      <li>Press the "Delete My Account" button.</li>
+      <li>Press "Delete My Account" in the pop-up to confirm.</li>
+    </ol>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">If you don't have the app downloaded:</h2>
+    <p style="margin-bottom: 2rem; line-height: 1.8;">
+      Email <a href="mailto:support@oceandating.app">support@oceandating.app</a>
+      and put "Delete My Account" in the subject. Include your phone number in the email message.
+      You may be asked to verify your identity.
+    </p>
+
+    <p style="line-height: 1.8;">
+      See our <a href="/privacy">Privacy Policy</a>
+      for more information about our account deletion process.
+    </p>
+  </main>
+  <Footer />
+</BaseLayout>
