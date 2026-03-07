@@ -1,3 +1,7 @@
+# Hosting
+
+The website is hosted on Netlify
+
 # Astro Starter Kit: Minimal
 
 ```sh
